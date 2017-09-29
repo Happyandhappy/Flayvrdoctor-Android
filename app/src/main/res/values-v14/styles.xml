@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar.Solid.Lollipop" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/ProgressBar.Lollipop</item>
+        <item name="android:background">@drawable/ab_solid_lollipop</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_lollipop</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_lollipop</item>
+    </style>
+    <style name="ActionBar.Transparent.Lollipop" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:progressBarStyle">@style/ProgressBar.Lollipop</item>
+        <item name="android:background">@drawable/ab_transparent_lollipop</item>
+    </style>
+    <style name="Theme.Lollipop" parent="@style/Theme.AppCompat.Light">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Lollipop</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Lollipop</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Lollipop</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_lollipop</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Lollipop</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Lollipop</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Lollipop</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_lollipop</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_lollipop</item>
+    </style>
+    <style name="Theme.Lollipop.Widget" parent="@style/Theme.AppCompat">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Lollipop</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Lollipop</item>
+    </style>
+</resources>

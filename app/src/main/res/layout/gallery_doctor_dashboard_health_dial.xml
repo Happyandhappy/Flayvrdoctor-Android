@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.screens.dashboard.SquareFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.flayvr.screens.dashboard.DialChartView android:id="@+id/dial" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="53.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/gallery_health" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="79%" android:shadowColor="@color/black" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" app:fontFamily="roboto" app:textWeight="bold" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/gallery_health_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:text="Strong" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/gallery_doctor_gallery_Health" />
+</com.flayvr.screens.dashboard.SquareFrameLayout>

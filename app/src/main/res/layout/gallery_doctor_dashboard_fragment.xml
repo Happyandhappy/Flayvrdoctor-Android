@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:background="@color/material_blue_grey_900" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/material_blue_grey_900" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/header" android:background="@color/md_blue_grey_800" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <include android:id="@+id/health_dial" android:layout_width="@dimen/gallery_doctor_health_dial_length" android:layout_height="@dimen/gallery_doctor_health_dial_length" android:layout_marginLeft="@dimen/gd_side_margin" android:layout_marginTop="@dimen/gd_side_margin" android:layout_marginBottom="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" layout="@layout/gallery_doctor_dashboard_health_dial" />
+            <include android:id="@+id/space_dial" android:layout_width="@dimen/gallery_doctor_free_space_dial_length" android:layout_height="@dimen/gallery_doctor_free_space_dial_length" android:layout_marginTop="@dimen/gd_side_margin" android:layout_marginRight="@dimen/gd_side_margin" android:layout_alignParentRight="true" layout="@layout/gallery_doctor_dashboard_free_space_dial" />
+            <include android:id="@+id/dashboard_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_side_margin" android:layout_marginRight="@dimen/gd_side_margin" android:layout_below="@+id/space_dial" android:layout_alignParentRight="true" layout="@layout/gallery_doctor_dashboard_source_chooser" />
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/body" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ViewSwitcher android:gravity="center" android:layout_gravity="center" android:id="@+id/switcher" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out">
+                <include android:id="@+id/progress_view" layout="@layout/gallery_doctor_progress_container_view" />
+                <include android:id="@+id/distribution_chart" layout="@layout/gallery_doctor_dashboard_bars" />
+            </ViewSwitcher>
+        </FrameLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@+id/dashboard_fab" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:src="@drawable/doctor_fab_logo" app:elevation="6.0dip" app:layout_anchor="@+id/header" app:layout_anchorGravity="end|center|bottom" app:fabSize="normal" app:borderWidth="0.0dip" app:backgroundTint="@color/md_yellow_500" />
+</android.support.design.widget.CoordinatorLayout>

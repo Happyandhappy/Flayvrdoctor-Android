@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="8.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hint_lightbulb" android:scaleType="center" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/md_grey_500" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minHeight="48.0dip" android:text="@string/gallery_doctor_similar_hint_heading"
+                  xmlns:android="http://schemas.android.com/apk/res/android" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_500" android:gravity="center_vertical" android:id="@+id/subtitle" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/gallery_doctor_similar_hint_text" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/md_light_blue_500" android:gravity="center_vertical" android:layout_gravity="right" android:id="@+id/action" android:background="@drawable/action_btn_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="16.0dip" android:text="@string/hints_all_caps_dismiss" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:fontFamily="roboto" app:textWeight="medium" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

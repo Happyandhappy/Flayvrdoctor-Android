@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.screens.dashboard.SquareFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.flayvr.screens.dashboard.DialChartView android:id="@+id/dial" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.devspark.robototextview.widget.RobotoTextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/space_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" app:fontFamily="roboto" app:textWeight="bold" />
+    <TextView android:textSize="@dimen/gallery_doctor_space_left_label_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@+id/space_left_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/gallery_doctor_space_left" />
+</com.flayvr.screens.dashboard.SquareFrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.flayvr.screens.dashboard.PieChartView android:layout_gravity="center" android:id="@+id/dial" android:layout_width="@dimen/gallery_doctor_end_intro_pie_length" android:layout_height="@dimen/gallery_doctor_end_intro_pie_length" android:layout_weight="0.0" />
+        </FrameLayout>
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/material_blue_grey_800" android:gravity="center" android:id="@+id/intro_title" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Clean and free up valuable storage" android:layout_weight="0.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/gallery_doctor_bottom_action_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/button" android:background="@drawable/blue_action_button_selector" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/gallery_doctor_intro4_text_go_to_dashboard" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_toggle_phone" />
+    <ToggleButton android:layout_gravity="center_vertical" android:id="@+id/dashboard_toggle_button" android:background="@drawable/dashboard_toggle_selector" android:padding="10.0dip" android:layout_width="56.0dip" android:layout_height="23.0dip" android:textOn="" android:textOff="" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/dashboard_toggle_cloud" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_toggle_cloud_setup" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/GalleryDoctorStyle" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.devspark.robototextview.widget.RobotoTextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:text="New York (6)" app:fontFamily="roboto" app:textWeight="medium" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <android.support.v7.widget.Toolbar android:layout_gravity="center_vertical" android:id="@+id/menu" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginBottom="5.0dip" app:theme="@style/Theme.ToolbarStyle" />
+</LinearLayout>

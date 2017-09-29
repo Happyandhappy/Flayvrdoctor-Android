@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/thumbnail_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cloud_place_holder" android:scaleType="fitXY" />
+    <ImageView android:id="@+id/thumbnail_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="center" android:id="@+id/video_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@+id/gallery_animation_icon" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/animated_tile_indicator" android:scaleType="center" />
+</merge>

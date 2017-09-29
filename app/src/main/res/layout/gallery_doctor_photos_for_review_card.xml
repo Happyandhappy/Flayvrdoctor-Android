@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.views.PhotoForReviewCard android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:padding="12.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/action_image" android:padding="@dimen/photos_for_review_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_review_keep_badge" android:alpha="0.0" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@+id/action_image2" android:padding="@dimen/photos_for_review_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_review_delete_badge" android:alpha="0.0" />
+    </FrameLayout>
+</com.flayvr.views.PhotoForReviewCard>

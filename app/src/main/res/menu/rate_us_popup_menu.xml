@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/remind" android:title="@string/rate_us_remind_me_later" app:showAsAction="never" />
+    <item android:id="@+id/never" android:title="@string/rate_us_never_show_this_again" app:showAsAction="never" />
+</menu>

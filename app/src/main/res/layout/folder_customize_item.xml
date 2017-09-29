@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@+id/folder_customize_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_900" android:ellipsize="end" android:id="@+id/folder_customize_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="72.0dip" android:layout_marginTop="14.0dip" android:text="Greece" android:maxLines="1" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_500" android:id="@+id/folder_customize_folder_images" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="189 photos" android:layout_alignLeft="@+id/folder_customize_folder_name" android:layout_alignParentBottom="true" android:layout_alignStart="@+id/folder_customize_folder_name" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/md_grey_500" android:id="@+id/folder_customize_folder_videoes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="10 videos" android:layout_toRightOf="@+id/folder_customize_folder_images" android:layout_alignTop="@+id/folder_customize_folder_images" android:layout_toEndOf="@+id/folder_customize_folder_images" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="6.0dip" app:cardCornerRadius="4.0dip" app:cardElevation="6.0dip" app:cardUseCompatPadding="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/top" android:background="@drawable/action_btn_selector_cards" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/gallery_doctor_card_top" />
+            <LinearLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                <com.flayvr.myrollshared.views.itemview.MediaItemView android:id="@+id/img1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:foreground="@null" android:layout_weight="1.0" />
+                <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+                <com.flayvr.myrollshared.views.itemview.MediaItemView android:id="@+id/img2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="@null" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_500" android:gravity="center_vertical" android:id="@+id/subtitle" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="8.0dip" android:text="438MB Ready to be cleaned" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/md_light_blue_500" android:gravity="center_vertical" android:id="@+id/bottom" android:background="@drawable/action_btn_selector_cards" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="REVIEW AND CLEAN" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:fontFamily="roboto" app:textWeight="medium" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

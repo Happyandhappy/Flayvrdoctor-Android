@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto" package="com.flayvr.doctor">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.flayvr.doctor.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.flayvr.doctor.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:name="com.flayvr.application.GalleryDoctorApplication"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Flayvr">
+        <activity
+            android:label="@string/menu_settings"
+            android:name="com.flayvr.screens.settings.SettingsActivity"
+            android:theme="@style/GalleryDoctorBlackTextStyle"/>
+        <activity
+            android:label="@string/menu_settings"
+            android:name="com.flayvr.screens.settings.SettingsHelpActivity"
+            android:theme="@style/GalleryDoctorBlackTextStyle"/>
+        <activity
+            android:name="com.flayvr.screens.intro.GDIntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GalleryDoctorStyle"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gallery_doctor_bad_photos_activity_title"
+            android:name="com.flayvr.screens.bad.GalleryDoctorBadPhotosActivity"
+            android:theme="@style/GalleryDoctorThemeToolbarDarkOverflow"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gallery_doctor_duplicates_activity_title"
+            android:name="com.flayvr.screens.duplicates.GalleryDoctorDuplicatePhotosActivity"
+            android:theme="@style/GalleryDoctorThemeToolbarDarkOverflow"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gallery_doctor_fullscreen_preview_activity_title"
+            android:name="com.flayvr.screens.fullscreen.GalleryDoctorSelectionFullScreenActivity"
+            android:theme="@style/TransparentGalleryDoctorWindowFullscreenTheme"/>
+        <activity
+            android:name="com.flayvr.screens.fullscreen.VideoActivity"
+            android:theme="@style/VideoFullscreenTheme"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/gallery_doctor_review_activity_title"
+            android:name="com.flayvr.screens.review.PhotosForReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GalleryDoctorThemeToolbarDarkOverflow"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gallery_doctor_videos_activity_title"
+            android:name="com.flayvr.screens.videos.LongVideosActivity"
+            android:theme="@style/GalleryDoctorThemeToolbarDarkOverflow"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/screenshots_activty_heading"
+            android:name="com.flayvr.screens.screenshots.ScreenshotsActivity"
+            android:theme="@style/GalleryDoctorThemeToolbarDarkOverflow"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/whatsapp_activty_heading"
+            android:name="com.flayvr.screens.whatsapp.WhatsappReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GalleryDoctorThemeToolbarDarkOverflow"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gallery_doctor_cards_activity_title"
+            android:name="com.flayvr.screens.cards.GalleryDoctorCardsActivity"
+            android:theme="@style/GalleryDoctorStyle"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gallery_doctor_name"
+            android:name="com.flayvr.screens.dashboard.GalleryDoctorDashboardActivity"
+            android:theme="@style/GalleryDoctorStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/intro_cloud_heading"
+            android:name="com.flayvr.screens.register.CloudSignInActivity"
+            android:theme="@style/GalleryDoctorStyle"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id"/>
+        <service
+            android:name="com.parse.PushService"/>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.flayvr.doctor"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:exported="false"
+            android:name="com.flayvr.receivers.GDNotificaionReceiver">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.flayvr.myrollshared.services.FocusWizardService"/>
+        <service android:name="com.flayvr.myrollshared.services.AppSessionInfoSender"/>
+        <receiver android:exported="true" android:name="com.flayvr.receivers.GooglePlayReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="cec3bfa25403118a4d7e43272f2fc83fd2965f78"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:name="com.flayvr.receivers.NewMediaItemReceiver">
+            <intent-filter>
+                <action android:name="com.android.camera.NEW_PICTURE"/>
+                <action android:name="android.hardware.action.NEW_PICTURE"/>
+                <action android:name="com.android.camera.NEW_VIDEO"/>
+                <action android:name="android.hardware.action.NEW_VIDEO"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flayvr.receivers.MyRollActionsReceiver">
+            <intent-filter>
+                <action android:name="com.flayvr.doctor.actions.ACTION_NEW_MEDIA"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_APP_CREATE"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_ANDROID_CONTENT_CHANGED"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_CV_FINISHED_ON_BATCH"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_CV_FINISHED"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_CLASSIFIER_FINISHED"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_DUPLICATES_FINISHED"/>
+                <action android:name="com.flayvr.doctor.actions.USER_INFO_FETCHED"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_NEW_MOMENT"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_GALLERY_BUILDER_NO_CHANGE"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_CLUSTERING_FINISHED"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_DELETE_ITEMS"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_CONTENT_OBSERVER"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_PICASA_SESSIOM_CHANGED"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_PICASA_UPDATE_FOLDER"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_PICASA_CLEAN_DATA"/>
+                <action android:name="com.flayvr.doctor.actions.ACTION_PICASA_FETCH_DONE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.flayvr.services.GDCVService"/>
+        <service android:name="com.flayvr.services.GalleryDoctorService">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.flayvr.services.GDPhotoClassifierService"/>
+        <service android:name="com.flayvr.myrollshared.services.UserProfileService"/>
+        <service android:name="com.flayvr.myrollshared.services.GalleryBuilderService">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.flayvr.myrollshared.services.PicasaGalleryBuilderService"/>
+        <service android:name="com.flayvr.services.GDDuplicatesService"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="8a0c08bd6f4ba2d927f7c627800193d0f29bd4a8"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+    </application>
+</manifest>

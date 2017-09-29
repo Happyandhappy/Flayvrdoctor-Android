@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_doctor_bottom_action_text_size">14.0sp</dimen>
+    <dimen name="gd_bar_top_margin">2.0dip</dimen>
+    <dimen name="gallery_doctor_space_left_label_size">10.0sp</dimen>
+</resources>

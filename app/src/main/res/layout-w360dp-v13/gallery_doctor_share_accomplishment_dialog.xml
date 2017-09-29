@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.screens.cards.AccomplishmentDialog android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/md_blue_grey_700" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/health_dial" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" layout="@layout/gallery_doctor_dashboard_health_dial" />
+        <TextView android:textSize="25.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_doctor_congrats" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/subheader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="16.0dip" android:text="@string/gallery_doctor_congrats_text" />
+    </LinearLayout>
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/facebook" android:background="@drawable/gallery_doctor_sharing_dialog_color_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/share_facebook" android:scaleType="center" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_blue_grey_800" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gd_share_facebook" />
+            </LinearLayout>
+            <View android:background="@color/md_grey_500" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/twitter" android:background="@drawable/gallery_doctor_sharing_dialog_color_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/share_twitter" android:scaleType="center" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_blue_grey_800" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gd_share_twitter" />
+            </LinearLayout>
+            <View android:background="@color/md_grey_500" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/other" android:background="@drawable/gallery_doctor_sharing_dialog_color_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/share_other" android:scaleType="center" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_blue_grey_800" android:gravity="center|left" android:id="@+id/action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gd_share_other_apps" />
+            </LinearLayout>
+            <View android:background="@color/md_grey_500" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/close" android:background="@drawable/gallery_doctor_sharing_dialog_color_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/share_close" android:scaleType="center" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_blue_grey_800" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" />
+            </LinearLayout>
+            <View android:background="@color/md_grey_500" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+</com.flayvr.screens.cards.AccomplishmentDialog>

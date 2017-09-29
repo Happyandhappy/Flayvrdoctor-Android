@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="centered" format="boolean" />
+    <attr name="drawerArrowStyle" format="reference" />
+    <attr name="fontFamily">
+        <enum name="roboto" value="0" />
+        <enum name="roboto_condensed" value="1" />
+        <enum name="roboto_slab" value="2" />
+    </attr>
+    <attr name="height" format="dimension" />
+    <attr name="isLightTheme" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="sephiroth_absHListViewStyle" format="reference" />
+    <attr name="sephiroth_listPreferredItemWidth" format="dimension" />
+    <attr name="sephiroth_listViewStyle" format="reference" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="textStyle">
+        <enum name="italic" value="1" />
+        <enum name="normal" value="0" />
+    </attr>
+    <attr name="textWeight">
+        <enum name="normal" value="0" />
+        <enum name="bold" value="4" />
+        <enum name="light" value="2" />
+        <enum name="medium" value="3" />
+        <enum name="thin" value="1" />
+        <enum name="ultra_bold" value="5" />
+    </attr>
+    <attr name="title" format="string" />
+    <attr name="typeface">
+        <enum name="roboto_black" value="10" />
+        <enum name="roboto_black_italic" value="11" />
+        <enum name="roboto_bold" value="8" />
+        <enum name="roboto_bold_italic" value="9" />
+        <enum name="roboto_condensed_bold" value="16" />
+        <enum name="roboto_condensed_bold_italic" value="17" />
+        <enum name="roboto_condensed_italic" value="15" />
+        <enum name="roboto_condensed_light" value="12" />
+        <enum name="roboto_condensed_light_italic" value="13" />
+        <enum name="roboto_condensed_regular" value="14" />
+        <enum name="roboto_italic" value="5" />
+        <enum name="roboto_light" value="2" />
+        <enum name="roboto_light_italic" value="3" />
+        <enum name="roboto_medium" value="6" />
+        <enum name="roboto_medium_italic" value="7" />
+        <enum name="roboto_regular" value="4" />
+        <enum name="roboto_slab_bold" value="21" />
+        <enum name="roboto_slab_light" value="19" />
+        <enum name="roboto_slab_regular" value="20" />
+        <enum name="roboto_slab_thin" value="18" />
+        <enum name="roboto_thin" value="0" />
+        <enum name="roboto_thin_italic" value="1" />
+    </attr>
+    <attr name="unselectedColor" format="color" />
+    <attr name="stackFromRight" format="boolean" />
+    <attr name="transcriptMode">
+        <enum name="normal" value="1" />
+        <enum name="alwaysScroll" value="2" />
+        <enum name="disabled" value="0" />
+    </attr>
+    <attr name="layout_scrollInterpolator" format="reference" />
+    <attr name="layout_collapseParallaxMultiplier" format="float" />
+    <attr name="expandedTitleMargin" format="dimension" />
+    <attr name="expandedTitleMarginStart" format="dimension" />
+    <attr name="expandedTitleMarginTop" format="dimension" />
+    <attr name="expandedTitleMarginEnd" format="dimension" />
+    <attr name="expandedTitleMarginBottom" format="dimension" />
+    <attr name="expandedTitleTextAppearance" format="reference" />
+    <attr name="collapsedTitleTextAppearance" format="reference" />
+    <attr name="contentScrim" format="color" />
+    <attr name="statusBarScrim" format="color" />
+    <attr name="toolbarId" format="reference" />
+    <attr name="keylines" format="reference" />
+    <attr name="statusBarBackground" format="reference" />
+    <attr name="layout_behavior" format="string" />
+    <attr name="layout_anchor" format="reference" />
+    <attr name="layout_keyline" format="integer" />
+    <attr name="topBottomBarArrowSize" format="dimension" />
+    <attr name="middleBarArrowSize" format="dimension" />
+    <attr name="barSize" format="dimension" />
+    <attr name="maxData" format="integer" />
+    <attr name="maxItems" format="integer" />
+    <attr name="resId" format="reference" />
+    <attr name="rippleColor" format="color" />
+    <attr name="pressedTranslationZ" format="dimension" />
+    <attr name="borderWidth" format="dimension" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="headerDividersEnabled" format="boolean" />
+    <attr name="footerDividersEnabled" format="boolean" />
+    <attr name="overScrollHeader" format="reference|color" />
+    <attr name="overScrollFooter" format="reference|color" />
+    <attr name="measureWithChild" format="integer" />
+    <attr name="menu" format="reference" />
+    <attr name="itemIconTint" format="color" />
+    <attr name="itemTextColor" format="color" />
+    <attr name="itemBackground" format="reference" />
+    <attr name="headerLayout" format="reference" />
+    <attr name="insetForeground" format="reference|color" />
+    <attr name="behavior_overlapTop" format="dimension" />
+    <attr name="itemIcon" format="reference" />
+    <attr name="itemText" format="string" />
+    <attr name="maxActionInlineWidth" format="dimension" />
+    <attr name="prompt" format="reference" />
+    <attr name="spinnerMode">
+        <enum name="dialog" value="0" />
+        <enum name="dropdown" value="1" />
+    </attr>
+    <attr name="popupPromptView" format="reference" />
+    <attr name="disableChildrenWhenDisabled" format="boolean" />
+
+    <declare-styleable name="StyledProgressBarView">
+        <attr name="text" format="string" />
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference" />
+        <attr name="assetName" format="string" />
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="tileBackgroundColor" format="color" />
+    </declare-styleable>
+`
+    <attr name="tabIndicatorColor" format="color" />
+    <attr name="tabIndicatorHeight" format="dimension" />
+    <attr name="tabContentStart" format="dimension" />
+    <attr name="tabBackground" format="reference" />
+    <attr name="tabMinWidth" format="dimension" />
+    <attr name="tabMaxWidth" format="dimension" />
+    <attr name="tabTextAppearance" format="reference" />
+    <attr name="tabTextColor" format="color" />
+    <attr name="tabSelectedTextColor" format="color" />
+    <attr name="tabPaddingStart" format="dimension" />
+    <attr name="tabPaddingTop" format="dimension" />
+    <attr name="tabPaddingEnd" format="dimension" />
+    <attr name="tabPaddingBottom" format="dimension" />
+    <attr name="tabPadding" format="dimension" />
+    <attr name="hintTextAppearance" format="reference" />
+    <attr name="errorEnabled" format="boolean" />
+    <attr name="errorTextAppearance" format="reference" />
+    <declare-styleable name="ThumbnailItemView">
+        <attr name="propoprtion" format="float" />
+        <attr name="viewOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="mixed" value="2" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

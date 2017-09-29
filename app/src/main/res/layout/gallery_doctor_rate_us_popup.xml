@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.views.GDRateUsPopup android:theme="@style/GalleryDoctorStyle" android:orientation="vertical" android:background="@color/md_blue_grey_600" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:theme="@style/Theme.ToolbarStyle" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/gallery_doctor_enjoying_gallery_doctor" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/gallery_doctor_rate_your_experience_with_gallery_doctor" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/stars" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star_stroke" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star_stroke" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star_stroke" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star_stroke" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star_stroke" />
+    </LinearLayout>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/result_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="Darn it we should be better" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/action" android:background="@drawable/blue_action_button_selector" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Darn it we should be better" />
+</com.flayvr.views.GDRateUsPopup>

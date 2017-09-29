@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/clean" android:orderInCategory="100" android:title="@string/gallery_doctor_clean_group" app:showAsAction="always" />
+    <item android:id="@+id/ignore" android:orderInCategory="100" android:title="@string/gallery_doctor_ignore_group" app:showAsAction="never" />
+    <item android:id="@+id/report" android:orderInCategory="100" android:title="@string/gallery_doctor_report_mistake" app:showAsAction="never" />
+</menu>

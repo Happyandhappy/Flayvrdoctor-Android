@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_doctor_end_intro_pie_length">240.0dip</dimen>
+    <dimen name="gallery_doctor_free_space_dial_length">100.0dip</dimen>
+    <dimen name="gallery_doctor_health_dial_length">170.0dip</dimen>
+    <dimen name="photos_for_review_padding">12.0dip</dimen>
+</resources>

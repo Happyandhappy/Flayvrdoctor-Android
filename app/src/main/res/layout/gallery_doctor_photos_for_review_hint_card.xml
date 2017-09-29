@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.views.RotatableCardView android:orientation="vertical" android:layout_width="250.0dip" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/md_grey_500" android:gravity="center" android:id="@+id/subtitle" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_doctor_review_hint" />
+        <FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/gd_tinder_hint_slide_keep" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/md_green_500" android:gravity="center" android:layout_gravity="center|left" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_doctor_review_hint_keep" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_tinder_hint_slide_delete" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/md_red_500" android:gravity="center" android:layout_gravity="center|left" android:paddingLeft="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/gallery_doctor_review_hint_delete" />
+        </FrameLayout>
+    </LinearLayout>
+</com.flayvr.views.RotatableCardView>

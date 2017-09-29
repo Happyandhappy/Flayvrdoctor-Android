@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" app:theme="@style/MyActionBar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/gallery_doctor_notifications" android:key="pref_key_storage_settings">
+        <CheckBoxPreference android:title="@string/gallery_doctor_bad_photos_activity_title" android:key="bad_photos_notif" />
+        <CheckBoxPreference android:title="@string/gallery_doctor_duplicates_activity_title" android:key="similar_photos_notif" />
+        <CheckBoxPreference android:title="@string/gallery_doctor_settings_large_number_of_photos" android:key="large_number_of_photos_notif" />
+        <CheckBoxPreference android:title="@string/gallery_doctor_settings_weekend" android:key="weekend_notif" />
+        <CheckBoxPreference android:title="@string/gallery_doctor_settings_low_on_space" android:key="low_space_notif" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/gallery_doctor_show_us_love" android:key="pref_key_storage_settings">
+        <com.flayvr.screens.settings.PreferencePlusOneButton android:title="" android:key="plus_one_button" android:summary="" />
+        <Preference android:title="@string/gallery_doctor_settings_rate_us_title" android:key="rate_us_preference" />
+        <Preference android:title="@string/gallery_doctor_settings_facebook" android:key="facebook_like" />
+        <Preference android:title="@string/gallery_doctor_settings_twitter" android:key="twitter_follow" />
+        <Preference android:title="@string/settings_invite_friend_title" android:key="invite_friend" android:summary="@string/gallery_doctor_settings_invite_friend_summary" />
+        <Preference android:title="@string/help_menu_item_label" android:key="faq" />
+        <Preference android:title="@string/feedback_menu_item_label" android:key="send_feedback" />
+    </PreferenceCategory>
+</PreferenceScreen>

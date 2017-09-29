@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/basic_item_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottombar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/isbest" android:background="@color/black_overlay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/gallery_doctor_best_photo" android:lines="2" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/selection_box" android:background="@color/black_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/selection_frame" android:background="@drawable/action_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

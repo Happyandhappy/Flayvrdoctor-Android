@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flayvr.screens.dashboard.DashboardBarsView android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.flayvr.views.StyledProgressBarView android:id="@+id/bad_photos" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="Bad photos" app:progressColor="@color/md_red_400" />
+            <View android:background="#ff20292e" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.flayvr.views.StyledProgressBarView android:id="@+id/similar_photos" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="Bad photos" app:progressColor="@color/md_teal_400" />
+            <View android:background="#ff20292e" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.flayvr.views.StyledProgressBarView android:id="@+id/photos_for_review" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="Bad photos" app:progressColor="@color/md_yellow_700" />
+            <View android:background="#ff20292e" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.flayvr.views.StyledProgressBarView android:id="@+id/long_videos" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="Long Videos" app:progressColor="@color/md_blue_grey_600" />
+            <View android:background="#ff20292e" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.flayvr.views.StyledProgressBarView android:id="@+id/whatsapp_photos" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="WhatsApp Photos" app:progressColor="@color/md_light_green_700" />
+            <View android:background="#ff20292e" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.flayvr.views.StyledProgressBarView android:id="@+id/screenshots" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="Sceenshots" app:progressColor="@color/md_orange_700" />
+            <View android:background="#ff20292e" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</com.flayvr.screens.dashboard.DashboardBarsView>

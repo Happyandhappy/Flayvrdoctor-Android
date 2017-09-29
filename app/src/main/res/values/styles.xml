@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar.Solid.Lollipop" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:progressBarStyle">@style/ProgressBar.Lollipop</item>
+        <item name="android:background">@drawable/ab_solid_lollipop</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_lollipop</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_lollipop</item>
+    </style>
+    <style name="ActionBar.Transparent.Lollipop" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:progressBarStyle">@style/ProgressBar.Lollipop</item>
+        <item name="android:background">@drawable/ab_transparent_lollipop</item>
+    </style>
+    <style name="Theme.Lollipop" parent="@android:style/Theme.Holo.Light">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Lollipop</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Lollipop</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Lollipop</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_lollipop</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Lollipop</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Lollipop</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Lollipop</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_lollipop</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_lollipop</item>
+    </style>
+    <style name="Theme.Lollipop.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Lollipop</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Lollipop</item>
+    </style>
+    <style name="ActionBarTabStyle.Lollipop" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_lollipop</item>
+    </style>
+    <style name="ActionButton.CloseMode.Lollipop" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_lollipop</item>
+    </style>
+    <style name="AutoCompleteStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="BlackTextActivity" parent="@style/Theme.Flayvr">
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+    <style name="CustomActionBarThemeTrans" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+    <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+        <item name="android:tabStripEnabled">false</item>
+    </style>
+    <style name="CustomTabWidgetText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DropDownListView.Lollipop" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_lollipop</item>
+    </style>
+    <style name="DropDownNav.Lollipop" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_lollipop</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_lollipop</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_lollipop</item>
+    </style>
+    <style name="FlayvrActionBarFullscreen" parent="@style/MyActionBar">
+        <item name="android:background">@drawable/moment_widget_gradient_background_upside</item>
+        <item name="android:titleTextStyle">@style/FlayvrActionBarFullscreenTitleText</item>
+        <item name="titleTextStyle">@style/FlayvrActionBarFullscreenTitleText</item>
+        <item name="background">@drawable/moment_widget_gradient_background_upside</item>
+    </style>
+    <style name="FlayvrActionBarFullscreenTitleText" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="FlayvrActionBarFullscreenTransparent" parent="@style/MyActionBar">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:displayOptions">showHome</item>
+        <item name="displayOptions">showHome</item>
+        <item name="background">@color/transparent</item>
+    </style>
+    <style name="FlayvrTransparentTheme" parent="@style/Theme.Flayvr">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/FlayvrActionBarFullscreenTransparent</item>
+    </style>
+    <style name="FullscreenTheme" parent="@style/TransparentWindowFullscreenTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:actionBarStyle">@style/FlayvrActionBarFullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/FlayvrActionBarFullscreen</item>
+    </style>
+    <style name="GalleryDoctorActionBar" parent="@style/MyActionBar">
+        <item name="android:background">@color/md_blue_grey_800</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@color/md_blue_grey_800</item>
+    </style>
+    <style name="GalleryDoctorBlackTextStyle" parent="@style/GalleryDoctorStyle">
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+    <style name="GalleryDoctorStyle" parent="@style/Theme.Flayvr">
+        <item name="android:actionBarStyle">@style/GalleryDoctorActionBar</item>
+        <item name="actionBarStyle">@style/GalleryDoctorActionBar</item>
+    </style>
+    <style name="GalleryDoctorThemeToolbarDarkOverflow" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/GalleryDoctorActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyCustomThemeOverflow</item>
+        <item name="actionOverflowButtonStyle">@style/MyCustomThemeOverflow</item>
+        <item name="actionBarStyle">@style/GalleryDoctorActionBar</item>
+        <item name="colorPrimary">@color/md_blue_grey_800</item>
+        <item name="colorPrimaryDark">@color/md_blue_grey_800</item>
+    </style>
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/flayvr_color</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@color/flayvr_color</item>
+    </style>
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MyCustomThemeOverflow" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/gd_topbar_select</item>
+    </style>
+    <style name="OverFlow" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow" />
+    <style name="PopupMenu.Lollipop" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_lollipop</item>
+    </style>
+    <style name="ProgressBar.Lollipop" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_lollipop</item>
+    </style>
+    <style name="TextAppearance.Design.Error" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/error_color</item>
+    </style>
+    <style name="TextAppearance.Design.Hint" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">?colorControlActivated</item>
+    </style>
+    <style name="TextAppearance.Design.Snackbar.Action" parent="@style/TextAppearance.AppCompat.Button">
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+    <style name="TextAppearance.Design.Snackbar.Message" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/snackbar_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Design.Tab" parent="@style/TextAppearance.AppCompat.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="Theme.Flayvr" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/flayvr_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteStyle</item>
+        <item name="android:editTextStyle">@style/Theme.Flayvr.EditText</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.ListPopupWindow</item>
+        <item name="android:selectableItemBackground">@drawable/ab_item_background</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:actionBarWidgetTheme">@android:style/Widget.Holo.Light.ListPopupWindow</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+    <style name="Theme.Flayvr.EditText" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Theme.Flayvr.EditText.Dark" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Theme.IAPTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="@android:style/Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Theme.ToolbarStyle" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+    <style name="TransparentGalleryDoctorWindowFullscreenTheme" parent="@style/GalleryDoctorStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="TransparentWindowFullscreenTheme" parent="@style/Theme.Flayvr">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="VideoFullscreenTheme" parent="@style/FlayvrTransparentTheme">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?colorPrimary</item>
+        <item name="elevation">@dimen/appbar_elevation</item>
+    </style>
+    <style name="Widget.Design.CollapsingToolbar" parent="@android:style/Widget">
+        <item name="expandedTitleMargin">16.0dip</item>
+        <item name="expandedTitleMarginBottom">20.0dip</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+        <item name="statusBarScrim">?colorPrimaryDark</item>
+    </style>
+    <style name="Widget.Design.CoordinatorLayout" parent="@android:style/Widget">
+        <item name="statusBarBackground">?colorPrimaryDark</item>
+    </style>
+    <style name="Widget.Design.FloatingActionButton" parent="@android:style/Widget">
+        <item name="android:background">@drawable/fab_background</item>
+        <item name="elevation">@dimen/fab_elevation</item>
+        <item name="rippleColor">?colorControlHighlight</item>
+        <item name="fabSize">normal</item>
+        <item name="pressedTranslationZ">@dimen/fab_translation_z_pressed</item>
+        <item name="borderWidth">@dimen/fab_border_width</item>
+        <item name="backgroundTint">?colorAccent</item>
+    </style>
+    <style name="Widget.Design.NavigationView" parent="">
+        <item name="android:background">?android:windowBackground</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:maxWidth">@dimen/navigation_max_width</item>
+        <item name="elevation">@dimen/navigation_elevation</item>
+    </style>
+    <style name="Widget.Design.ScrimInsetsFrameLayout" parent="">
+        <item name="insetForeground">#44000000</item>
+    </style>
+    <style name="Widget.Design.Snackbar" parent="@android:style/Widget">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:background">@drawable/snackbar_background</item>
+        <item name="android:paddingLeft">@dimen/snackbar_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/snackbar_padding_horizontal</item>
+        <item name="android:maxWidth">@dimen/snackbar_max_width</item>
+        <item name="android:minWidth">@dimen/snackbar_min_width</item>
+        <item name="elevation">@dimen/snackbar_elevation</item>
+        <item name="maxActionInlineWidth">@dimen/snackbar_action_inline_max_width</item>
+    </style>
+    <style name="Widget.Design.TextInputLayout" parent="@android:style/Widget">
+        <item name="hintTextAppearance">@style/TextAppearance.Design.Hint</item>
+        <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
+    </style>
+    <style name="Widget.IconPageIndicator" parent="@style/Widget">
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+</resources>

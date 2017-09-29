@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/progess_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/progress_pattern" android:scaleType="fitXY" android:layout_alignTop="@+id/texts_frame" android:layout_alignBottom="@+id/texts_frame" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/slider_top_shadow" android:scaleType="fitXY" android:layout_alignLeft="@+id/progess_view" android:layout_alignTop="@+id/texts_frame" android:layout_alignRight="@+id/progess_view" android:layout_alignStart="@+id/progess_view" android:layout_alignEnd="@+id/progess_view" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/slider_btn_shadow" android:scaleType="fitXY" android:layout_alignLeft="@+id/progess_view" android:layout_alignRight="@+id/progess_view" android:layout_alignBottom="@+id/texts_frame" android:layout_alignStart="@+id/progess_view" android:layout_alignEnd="@+id/progess_view" />
+    <FrameLayout android:id="@+id/texts_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/progess_text_frame" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="@dimen/gd_bar_text_size" android:textColor="@color/white" android:layout_gravity="center|left|top" android:id="@+id/progess_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="220 Bad Photos | 389MB" app:fontFamily="roboto" app:textWeight="light" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="@dimen/gd_bar_review_text_size" android:textColor="@color/white" android:id="@+id/progess_review" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_review_action" android:layout_below="@+id/progess_text" android:layout_alignLeft="@+id/progess_text" app:fontFamily="roboto" app:textWeight="light" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/done_text_frame" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/done_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/white_check" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="@dimen/gd_bar_text_size" android:textColor="@color/white" android:layout_gravity="top" android:id="@+id/done_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="No Bad photos" android:layout_toRightOf="@+id/done_icon" app:fontFamily="roboto" app:textWeight="light" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="@dimen/gd_bar_review_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done_action" android:layout_below="@+id/done_text" android:layout_alignLeft="@+id/done_text" app:fontFamily="roboto" app:textWeight="light" />
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:background="@drawable/dashboard_bar_color_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignTop="@+id/texts_frame" android:layout_alignBottom="@+id/texts_frame" />
+</merge>

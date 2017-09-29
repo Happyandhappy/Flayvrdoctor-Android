@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devspark.robototextview.widget.RobotoTextView android:theme="@style/GalleryDoctorStyle" android:textSize="14.0sp" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="24.0dip" android:text="New York (6)" app:fontFamily="roboto" app:textWeight="medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

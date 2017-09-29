@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_doctor_free_space_dial_length">160.0dip</dimen>
+    <dimen name="gallery_doctor_health_dial_length">200.0dip</dimen>
+    <dimen name="fab_margin">24.0dip</dimen>
+    <dimen name="fullscreen_thumb_hieght">120.0dip</dimen>
+    <dimen name="fullscreen_thumb_width">160.0dip</dimen>
+    <dimen name="gd_side_margin">40.0dip</dimen>
+    <dimen name="snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="snackbar_max_width">576.0dip</dimen>
+    <dimen name="snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="snackbar_padding_vertical_2lines">@dimen/snackbar_padding_vertical</item>
+    <dimen name="tab_min_width">160.0dip</dimen>
+</resources>
